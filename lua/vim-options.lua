@@ -11,7 +11,7 @@ vim.cmd("set smarttab")
 vim.cmd("set smartcase")
 vim.cmd("set splitbelow splitright")
 vim.cmd("set wildmenu")
-
+vim.cmd("set cursorline")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 

@@ -9,8 +9,12 @@ return {
     -- init = function() vim.g.barbar_auto_setup = false end,
     config = function ()
       -- local barbar = require('barbar')
-      vim.keymap.set('n', '<leader>nt', ':BufferNext<CR>', {})
-      vim.keymap.set('n', '<leader>tt ',':BufferLast<CR>', {})
+      
+      vim.keymap.set('n', '<leader>.', ':BufferNext<CR>', {})
+      vim.keymap.set('n', '<leader>,',':BufferPrevious<CR>', {})
+      vim.keymap.set('n', '<leader><', '<Cmd>BufferMovePrevious<CR>', opts)
+      vim.keymap.set('n', '<leader>>', '<Cmd>BufferMoveNext<CR>', opts)
+
     end,
     opts = {
       -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
