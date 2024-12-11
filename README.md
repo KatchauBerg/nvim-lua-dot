@@ -1,1 +1,1 @@
-git clone https://github.com/KatchauBerg/nvim-lua-dot ~/.config/nvim && nvim
+git clone https://github.com/KatchauBerg/nvim-lua-dot.git ~/.config/nvim && nvim
