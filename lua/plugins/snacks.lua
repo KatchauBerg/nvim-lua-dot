@@ -13,7 +13,7 @@ return {
           { section = "startup" },
           {
             section = "terminal",
-            cmd = "ascii-image-converter $HOME/.config/giphy.gif -C -c",
+            cmd = "ascii-image-converter $HOME/.config/nvim/images/giphy.gif -C -c",
             random = 10,
             pane = 2,
             indent = 4,
