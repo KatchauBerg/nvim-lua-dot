@@ -17,7 +17,7 @@ return{
     "williamboman/mason-lspconfig.nvim",
     config = function ()
       require("mason-lspconfig").setup({
-        ensure_installed = {"lua_ls", "ts_ls","jdtls"}
+        ensure_installed = {"lua_ls", "ts_ls", "intelephense"}
       })
     end
   },
@@ -40,6 +40,10 @@ return{
         capabilities = capabilities
       })
 
+      lspconfig.intelephense.setup({
+
+        capabilities = capabilities
+      })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
